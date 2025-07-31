@@ -3,7 +3,7 @@ calc.pval =  mid.range.binomial
 percentile.dist =  quantile
 maxNApercent =  20
 modern =  FALSE
-normalize =  TRUE
+normalize =  FALSE
 norm_method =  Cranial.capacit
 remove.outliers =  TRUE
 permutate =  FALSE
@@ -14,7 +14,74 @@ cor.adj =
 	 FALSE
 relevant.specimens =
   
-	 dali
+	 irhoud_1 
+	 irhoud_2 
+	 florisbad 
+	 omo_ii 
+	 lh_18 
+	 skhul_v 
+	 skhul_ix 
+	 qafzeh_ix 
+	 mladec_i 
+	 mladec_ii 
+	 mladec_v 
+	 mladec_vi 
+	 cro_magnon_i 
+	 cro_magnon_ii 
+	 cro_magnon_iii 
+	 upper_cave_101 
+	 upper_cave_103 
+	 liujiang 
+	 peking_x 
+	 peking_xiii 
+	 peking_rc_1996 
+	 nanjing1 
+	 hexian 
+	 sambungmacan_1 
+	 sambungmacan_3 
+	 sangiran_2 
+	 sangiran17 
+	 ngandong_7 
+	 ngandong_9 
+	 ngandong_12 
+	 dmanisi_211_2282 
+	 dmanisi_2280 
+	 dmanisi_2700_2735 
+	 dmanisi_4500_2600 
+	 sale 
+	 knm_wt_15000 
+	 er_3733 
+	 er_3883 
+	 arago_xxi_xlvii 
+	 broken_hill 
+	 petralona_1 
+	 ceprano 
+	 steinheim_s11 
+	 narmada 
+	 eliye_springs 
+	 ndutu 
+	 sh4 
+	 sh5 
+	 tabun_c1 
+	 spy_i 
+	 spy_ii 
+	 gibraltar1 
+	 amud 
+	 la_chapelle_aux_saint 
+	 la_ferrassie_1 
+	 shanidar_1 
+	 shanidar_5 
+	 cesaire 
+	 saccopastore_i 
+	 saccopastore_ii 
+	 Neanderthal_type 
+	 saldanha 
+	 dali 
+	 hualongdong 
+	 Homo_longi 
+	 jinniushan 
+	 maba 
+	 xuchang
 predictions =  
 	 Maximum_biparietal_breadth 
 	 Maxilloalveolar_length 
@@ -200,3 +267,2926 @@ adj.m =
 	 SkFltnsCS.neu.nm 
 	 FhTYDiff.neu.nm 
 	 glab.prot.neu.nm
+ irhoud_1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 148.9 
+		value: 148.9 
+	 Maxilloalveolar.lengt.vis 
+		value: 63.1 
+		value: 63.1 
+	 NPH.vis 
+		value: 83.5 
+		value: 83.5 
+	 MAB.vis 
+		value: 73.5 
+		value: 73.5 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.713 
+		value: 1.713 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.664 
+		value: 0.664 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.002 
+		value: -0.002 
+	 mandibular_fossa_area.neu 
+		value: 215.367 
+		value: 215.367 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.419 
+		value: -1.419 
+
+ irhoud_2 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 144.3 
+		value: 144.3 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.076 
+		value: 2.076 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.515 
+		value: 2.515 
+	 cranial.base.elipse.neu 
+		value: 45290.111 
+		value: 45290.111 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ florisbad 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		N/A
+		N/A
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.029 
+		value: 2.029 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.821 
+		value: 1.821 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.118 
+		value: -0.118 
+
+ omo_ii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 140.8 
+		value: 140.8 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.159 
+		value: 2.159 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.347 
+		value: 2.347 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 185.423 
+		value: 185.423 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ lh_18 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 135.7 
+		value: 135.7 
+	 Maxilloalveolar.lengt.vis 
+		value: 57.8 
+		value: 57.8 
+	 NPH.vis 
+		value: 70.2 
+		value: 70.2 
+	 MAB.vis 
+		value: 65.6 
+		value: 65.6 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.244 
+		value: 2.244 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.255 
+		value: 2.255 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.004 
+		value: -0.004 
+	 mandibular_fossa_area.neu 
+		value: 196.436 
+		value: 196.436 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ skhul_v 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 143.6 
+		value: 143.6 
+	 Maxilloalveolar.lengt.vis 
+		value: 62.5 
+		value: 62.5 
+	 NPH.vis 
+		value: 78.6 
+		value: 78.6 
+	 MAB.vis 
+		value: 67.3 
+		value: 67.3 
+	 ZYB.vis 
+		value: 142.8 
+		value: 142.8 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.095 
+		value: -1.095 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.533 
+		value: 2.533 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.455 
+		value: 2.455 
+	 cranial.base.elipse.neu 
+		value: 38660.91 
+		value: 38660.91 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 160.041 
+		value: 160.041 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.896 
+		value: -0.896 
+
+ skhul_ix 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 153.4 
+		value: 153.4 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.067 
+		value: 2.067 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.214 
+		value: 2.214 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ qafzeh_ix 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 138.6 
+		value: 138.6 
+	 Maxilloalveolar.lengt.vis 
+		value: 56.7 
+		value: 56.7 
+	 NPH.vis 
+		value: 72.1 
+		value: 72.1 
+	 MAB.vis 
+		value: 69 
+		value: 69 
+	 ZYB.vis 
+		value: 129 
+		value: 129 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.314 
+		value: 2.314 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.389 
+		value: 2.389 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 137.702 
+		value: 137.702 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ mladec_i 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 142.2 
+		value: 142.2 
+	 Maxilloalveolar.lengt.vis 
+		value: 62.4 
+		value: 62.4 
+	 NPH.vis 
+		value: 69 
+		value: 69 
+	 MAB.vis 
+		value: 66.5 
+		value: 66.5 
+	 ZYB.vis 
+		value: 133.4 
+		value: 133.4 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.53 
+		value: 0.53 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.33 
+		value: 2.33 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.4 
+		value: 2.4 
+	 cranial.base.elipse.neu 
+		value: 42026.027 
+		value: 42026.027 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.01 
+		value: 0.01 
+	 mandibular_fossa_area.neu 
+		value: 152.107 
+		value: 152.107 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.413 
+		value: -1.413 
+
+ mladec_ii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 140.6 
+		value: 140.6 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.478 
+		value: 2.478 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.692 
+		value: 2.692 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.001 
+		value: -0.001 
+	 mandibular_fossa_area.neu 
+		value: 145.549 
+		value: 145.549 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ mladec_v 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 145.9 
+		value: 145.9 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.163 
+		value: 2.163 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.323 
+		value: 2.323 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.003 
+		value: -0.003 
+	 mandibular_fossa_area.neu 
+		value: 216.955 
+		value: 216.955 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ mladec_vi 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 157.3 
+		value: 157.3 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.424 
+		value: 2.424 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.761 
+		value: 2.761 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.005 
+		value: 0.005 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ cro_magnon_i 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 151.8 
+		value: 151.8 
+	 Maxilloalveolar.lengt.vis 
+		value: 54.9 
+		value: 54.9 
+	 NPH.vis 
+		value: 68.5 
+		value: 68.5 
+	 MAB.vis 
+		value: 65 
+		value: 65 
+	 ZYB.vis 
+		value: 137 
+		value: 137 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.738 
+		value: 0.738 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.497 
+		value: 2.497 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.548 
+		value: 2.548 
+	 cranial.base.elipse.neu 
+		value: 40520.451 
+		value: 40520.451 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 211.387 
+		value: 211.387 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.703 
+		value: 0.703 
+
+ cro_magnon_ii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 138.6 
+		value: 138.6 
+	 Maxilloalveolar.lengt.vis 
+		value: 51.5 
+		value: 51.5 
+	 NPH.vis 
+		value: 64 
+		value: 64 
+	 MAB.vis 
+		value: 65 
+		value: 65 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.276 
+		value: 2.276 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.233 
+		value: 2.233 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.004 
+		value: 0.004 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ cro_magnon_iii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 154 
+		value: 154 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.625 
+		value: 2.625 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 3.08 
+		value: 3.08 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.003 
+		value: 0.003 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ upper_cave_101 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 145.1 
+		value: 145.1 
+	 Maxilloalveolar.lengt.vis 
+		value: 57.5 
+		value: 57.5 
+	 NPH.vis 
+		value: 76.4 
+		value: 76.4 
+	 MAB.vis 
+		value: 70 
+		value: 70 
+	 ZYB.vis 
+		value: 140 
+		value: 140 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.647 
+		value: 1.647 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.251 
+		value: 2.251 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.124 
+		value: 2.124 
+	 cranial.base.elipse.neu 
+		value: 48784.159 
+		value: 48784.159 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.003 
+		value: -0.003 
+	 mandibular_fossa_area.neu 
+		value: 185.053 
+		value: 185.053 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.28 
+		value: 0.28 
+
+ upper_cave_103 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 131.7 
+		value: 131.7 
+	 Maxilloalveolar.lengt.vis 
+		value: 58.6 
+		value: 58.6 
+	 NPH.vis 
+		value: 68.4 
+		value: 68.4 
+	 MAB.vis 
+		value: 65.8 
+		value: 65.8 
+	 ZYB.vis 
+		value: 140 
+		value: 140 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.706 
+		value: 0.706 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.486 
+		value: 2.486 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.333 
+		value: 2.333 
+	 cranial.base.elipse.neu 
+		value: 40038.75 
+		value: 40038.75 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.002 
+		value: 0.002 
+	 mandibular_fossa_area.neu 
+		value: 184.024 
+		value: 184.024 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.908 
+		value: -1.908 
+
+ liujiang 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 143.4 
+		value: 143.4 
+	 Maxilloalveolar.lengt.vis 
+		value: 52.5 
+		value: 52.5 
+	 NPH.vis 
+		value: 63.5 
+		value: 63.5 
+	 MAB.vis 
+		value: 64.4 
+		value: 64.4 
+	 ZYB.vis 
+		value: 132 
+		value: 132 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.545 
+		value: 1.545 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.599 
+		value: 2.599 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.636 
+		value: 2.636 
+	 cranial.base.elipse.neu 
+		value: 41522.556 
+		value: 41522.556 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.003 
+		value: 0.003 
+	 mandibular_fossa_area.neu 
+		value: 156.426 
+		value: 156.426 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ peking_x 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 138.8 
+		value: 138.8 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.146 
+		value: 2.146 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.542 
+		value: 2.542 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ peking_xiii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		N/A
+		N/A
+	 Maxilloalveolar.lengt.vis 
+		value: 60.3 
+		value: 60.3 
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		value: 60.3 
+		value: 60.3 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ peking_rc_1996 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 138 
+		value: 138 
+	 Maxilloalveolar.lengt.vis 
+		value: 63.4 
+		value: 63.4 
+	 NPH.vis 
+		value: 75.5 
+		value: 75.5 
+	 MAB.vis 
+		value: 67.1 
+		value: 67.1 
+	 ZYB.vis 
+		value: 145 
+		value: 145 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.023 
+		value: 2.023 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.096 
+		value: 2.096 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 155.772 
+		value: 155.772 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ nanjing1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 133.7 
+		value: 133.7 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		value: 66 
+		value: 66 
+	 ZYB.vis 
+		value: 140 
+		value: 140 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.001 
+		value: 0.001 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -2.067 
+		value: -2.067 
+
+ hexian 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 149.4 
+		value: 149.4 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 140 
+		value: 140 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.199 
+		value: 1.199 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.634 
+		value: 0.634 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.007 
+		value: -0.007 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ sambungmacan_1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 138.8 
+		value: 138.8 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 137.5 
+		value: 137.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.952 
+		value: 1.952 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.963 
+		value: 1.963 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ sambungmacan_3 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 134.9 
+		value: 134.9 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 137.5 
+		value: 137.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.997 
+		value: 1.997 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.198 
+		value: 2.198 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.005 
+		value: -0.005 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ sangiran_2 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 135.7 
+		value: 135.7 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 135 
+		value: 135 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.653 
+		value: 1.653 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.512 
+		value: 0.512 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 173.877 
+		value: 173.877 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ sangiran17 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 145.8 
+		value: 145.8 
+	 Maxilloalveolar.lengt.vis 
+		value: 62.4 
+		value: 62.4 
+	 NPH.vis 
+		value: 71 
+		value: 71 
+	 MAB.vis 
+		value: 78.1 
+		value: 78.1 
+	 ZYB.vis 
+		value: 154 
+		value: 154 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -2.017 
+		value: -2.017 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.191 
+		value: 1.191 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.775 
+		value: 0.775 
+	 cranial.base.elipse.neu 
+		value: 49922.106 
+		value: 49922.106 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.004 
+		value: -0.004 
+	 mandibular_fossa_area.neu 
+		value: 258.549 
+		value: 258.549 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.12 
+		value: -1.12 
+
+ ngandong_7 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 141 
+		value: 141 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.24 
+		value: 2.24 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		value: 50199.949 
+		value: 50199.949 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.005 
+		value: -0.005 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ ngandong_9 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 129.3 
+		value: 129.3 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.613 
+		value: 1.613 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.451 
+		value: 1.451 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ ngandong_12 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 142.8 
+		value: 142.8 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.976 
+		value: 1.976 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.052 
+		value: 2.052 
+	 cranial.base.elipse.neu 
+		value: 51220.118 
+		value: 51220.118 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.004 
+		value: -0.004 
+	 mandibular_fossa_area.neu 
+		value: 200.54 
+		value: 200.54 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ dmanisi_211_2282 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 119 
+		value: 119 
+	 Maxilloalveolar.lengt.vis 
+		value: 60.8 
+		value: 60.8 
+	 NPH.vis 
+		value: 80.7 
+		value: 80.7 
+	 MAB.vis 
+		value: 66.8 
+		value: 66.8 
+	 ZYB.vis 
+		value: 127.4 
+		value: 127.4 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.276 
+		value: 1.276 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.793 
+		value: 0.793 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.007 
+		value: 0.007 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.768 
+		value: -1.768 
+
+ dmanisi_2280 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 126.7 
+		value: 126.7 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 138 
+		value: 138 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.613 
+		value: 1.613 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.067 
+		value: 1.067 
+	 cranial.base.elipse.neu 
+		value: 40724.089 
+		value: 40724.089 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0 
+		value: 0 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ dmanisi_2700_2735 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 114.6 
+		value: 114.6 
+	 Maxilloalveolar.lengt.vis 
+		value: 59.8 
+		value: 59.8 
+	 NPH.vis 
+		value: 61.8 
+		value: 61.8 
+	 MAB.vis 
+		value: 63 
+		value: 63 
+	 ZYB.vis 
+		value: 124 
+		value: 124 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.146 
+		value: -0.146 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.726 
+		value: 1.726 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.239 
+		value: 1.239 
+	 cranial.base.elipse.neu 
+		value: 33927.693 
+		value: 33927.693 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.008 
+		value: 0.008 
+	 mandibular_fossa_area.neu 
+		value: 154.28 
+		value: 154.28 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.82 
+		value: -1.82 
+
+ dmanisi_4500_2600 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 115.8 
+		value: 115.8 
+	 Maxilloalveolar.lengt.vis 
+		value: 68.5 
+		value: 68.5 
+	 NPH.vis 
+		value: 74.2 
+		value: 74.2 
+	 MAB.vis 
+		value: 72.2 
+		value: 72.2 
+	 ZYB.vis 
+		value: 144.6 
+		value: 144.6 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -2.907 
+		value: -2.907 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.424 
+		value: 1.424 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.924 
+		value: 0.924 
+	 cranial.base.elipse.neu 
+		value: 40453.597 
+		value: 40453.597 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.006 
+		value: 0.006 
+	 mandibular_fossa_area.neu 
+		value: 187.752 
+		value: 187.752 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.616 
+		value: -0.616 
+
+ sale 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 131.3 
+		value: 131.3 
+	 Maxilloalveolar.lengt.vis 
+		value: 64 
+		value: 64 
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		value: 59 
+		value: 59 
+	 ZYB.vis 
+		value: 132.5 
+		value: 132.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 181.323 
+		value: 181.323 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ knm_wt_15000 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 126.4 
+		value: 126.4 
+	 Maxilloalveolar.lengt.vis 
+		value: 59.6 
+		value: 59.6 
+	 NPH.vis 
+		value: 80 
+		value: 80 
+	 MAB.vis 
+		value: 63.8 
+		value: 63.8 
+	 ZYB.vis 
+		value: 127.5 
+		value: 127.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		value: 39221.213 
+		value: 39221.213 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 154.466 
+		value: 154.466 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ er_3733 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 128.3 
+		value: 128.3 
+	 Maxilloalveolar.lengt.vis 
+		value: 58.9 
+		value: 58.9 
+	 NPH.vis 
+		value: 78.3 
+		value: 78.3 
+	 MAB.vis 
+		value: 62.4 
+		value: 62.4 
+	 ZYB.vis 
+		value: 131.8 
+		value: 131.8 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.669 
+		value: -0.669 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.821 
+		value: 1.821 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.712 
+		value: 1.712 
+	 cranial.base.elipse.neu 
+		value: 40152.444 
+		value: 40152.444 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.007 
+		value: -0.007 
+	 mandibular_fossa_area.neu 
+		value: 171.597 
+		value: 171.597 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.827 
+		value: -0.827 
+
+ er_3883 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 131.3 
+		value: 131.3 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 137.5 
+		value: 137.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.649 
+		value: 1.649 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.215 
+		value: 1.215 
+	 cranial.base.elipse.neu 
+		value: 40034.101 
+		value: 40034.101 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.004 
+		value: -0.004 
+	 mandibular_fossa_area.neu 
+		value: 179.543 
+		value: 179.543 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ arago_xxi_xlvii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 139.4 
+		value: 139.4 
+	 Maxilloalveolar.lengt.vis 
+		value: 68.5 
+		value: 68.5 
+	 NPH.vis 
+		value: 80.3 
+		value: 80.3 
+	 MAB.vis 
+		value: 74.2 
+		value: 74.2 
+	 ZYB.vis 
+		value: 149.5 
+		value: 149.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.816 
+		value: 1.816 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.229 
+		value: 1.229 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.007 
+		value: -0.007 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.07 
+		value: -0.07 
+
+ broken_hill 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 144.4 
+		value: 144.4 
+	 Maxilloalveolar.lengt.vis 
+		value: 67.2 
+		value: 67.2 
+	 NPH.vis 
+		value: 90.9 
+		value: 90.9 
+	 MAB.vis 
+		value: 84.8 
+		value: 84.8 
+	 ZYB.vis 
+		value: 143.4 
+		value: 143.4 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.31 
+		value: 0.31 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.038 
+		value: 1.038 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.803 
+		value: 0.803 
+	 cranial.base.elipse.neu 
+		value: 46878.28 
+		value: 46878.28 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.006 
+		value: -0.006 
+	 mandibular_fossa_area.neu 
+		value: 215.343 
+		value: 215.343 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.329 
+		value: 1.329 
+
+ petralona_1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 148.9 
+		value: 148.9 
+	 Maxilloalveolar.lengt.vis 
+		value: 68.2 
+		value: 68.2 
+	 NPH.vis 
+		value: 90.9 
+		value: 90.9 
+	 MAB.vis 
+		value: 86.1 
+		value: 86.1 
+	 ZYB.vis 
+		value: 158.1 
+		value: 158.1 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.188 
+		value: -0.188 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.703 
+		value: 1.703 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.234 
+		value: 1.234 
+	 cranial.base.elipse.neu 
+		value: 50301.422 
+		value: 50301.422 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.004 
+		value: -0.004 
+	 mandibular_fossa_area.neu 
+		value: 145.385 
+		value: 145.385 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.418 
+		value: 0.418 
+
+ ceprano 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 159.5 
+		value: 159.5 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 168.5 
+		value: 168.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.666 
+		value: 1.666 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.181 
+		value: 1.181 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.005 
+		value: -0.005 
+	 mandibular_fossa_area.neu 
+		value: 188.621 
+		value: 188.621 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ steinheim_s11 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 121.1 
+		value: 121.1 
+	 Maxilloalveolar.lengt.vis 
+		value: 60.7 
+		value: 60.7 
+	 NPH.vis 
+		value: 66.1 
+		value: 66.1 
+	 MAB.vis 
+		value: 59.5 
+		value: 59.5 
+	 ZYB.vis 
+		value: 124 
+		value: 124 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -1.813 
+		value: -1.813 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.88 
+		value: 1.88 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.502 
+		value: 1.502 
+	 cranial.base.elipse.neu 
+		value: 31904.758 
+		value: 31904.758 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 124.717 
+		value: 124.717 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.788 
+		value: 1.788 
+
+ narmada 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 158.5 
+		value: 158.5 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		value: 51777.06 
+		value: 51777.06 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 170.169 
+		value: 170.169 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ eliye_springs 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 153.7 
+		value: 153.7 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		value: 62 
+		value: 62 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.872 
+		value: 1.872 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.968 
+		value: 0.968 
+	 cranial.base.elipse.neu 
+		value: 39707.721 
+		value: 39707.721 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 159.127 
+		value: 159.127 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ ndutu 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 134.3 
+		value: 134.3 
+	 Maxilloalveolar.lengt.vis 
+		value: 47.5 
+		value: 47.5 
+	 NPH.vis 
+		value: 76.9 
+		value: 76.9 
+	 MAB.vis 
+		value: 53.7 
+		value: 53.7 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 2.777 
+		value: 2.777 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		value: 43752.081 
+		value: 43752.081 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ sh4 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		N/A
+		N/A
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		value: 80.8 
+		value: 80.8 
+	 MAB.vis 
+		value: 75.6 
+		value: 75.6 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ sh5 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 140.5 
+		value: 140.5 
+	 Maxilloalveolar.lengt.vis 
+		value: 60.8 
+		value: 60.8 
+	 NPH.vis 
+		value: 80 
+		value: 80 
+	 MAB.vis 
+		value: 73.7 
+		value: 73.7 
+	 ZYB.vis 
+		value: 140.1 
+		value: 140.1 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.681 
+		value: -0.681 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.658 
+		value: 1.658 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.207 
+		value: 1.207 
+	 cranial.base.elipse.neu 
+		value: 43558.685 
+		value: 43558.685 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.001 
+		value: 0.001 
+	 mandibular_fossa_area.neu 
+		value: 131.751 
+		value: 131.751 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.104 
+		value: 1.104 
+
+ tabun_c1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 142.5 
+		value: 142.5 
+	 Maxilloalveolar.lengt.vis 
+		value: 51.7 
+		value: 51.7 
+	 NPH.vis 
+		value: 74.9 
+		value: 74.9 
+	 MAB.vis 
+		value: 71.8 
+		value: 71.8 
+	 ZYB.vis 
+		value: 144 
+		value: 144 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.795 
+		value: 1.795 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.255 
+		value: 0.255 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ spy_i 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 144.7 
+		value: 144.7 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 132.11 
+		value: 132.11 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.173 
+		value: 2.173 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.335 
+		value: 2.335 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 184.681 
+		value: 184.681 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ spy_ii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 151.5 
+		value: 151.5 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		value: 148 
+		value: 148 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.881 
+		value: 1.881 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.21 
+		value: 1.21 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.001 
+		value: -0.001 
+	 mandibular_fossa_area.neu 
+		value: 154.828 
+		value: 154.828 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ gibraltar1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 143 
+		value: 143 
+	 Maxilloalveolar.lengt.vis 
+		value: 63.1 
+		value: 63.1 
+	 NPH.vis 
+		value: 75.1 
+		value: 75.1 
+	 MAB.vis 
+		value: 70.3 
+		value: 70.3 
+	 ZYB.vis 
+		value: 130 
+		value: 130 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 2.537 
+		value: 2.537 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		value: 46373.835 
+		value: 46373.835 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0 
+		value: 0 
+	 mandibular_fossa_area.neu 
+		value: 113.553 
+		value: 113.553 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 2.035 
+		value: 2.035 
+
+ amud 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 152.2 
+		value: 152.2 
+	 Maxilloalveolar.lengt.vis 
+		value: 52.5 
+		value: 52.5 
+	 NPH.vis 
+		value: 87 
+		value: 87 
+	 MAB.vis 
+		value: 77.2 
+		value: 77.2 
+	 ZYB.vis 
+		value: 146.6 
+		value: 146.6 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.326 
+		value: 2.326 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.269 
+		value: 2.269 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.001 
+		value: 0.001 
+	 mandibular_fossa_area.neu 
+		value: 206.843 
+		value: 206.843 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.557 
+		value: 1.557 
+
+ la_chapelle_aux_saint 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 149 
+		value: 149 
+	 Maxilloalveolar.lengt.vis 
+		value: 60.3 
+		value: 60.3 
+	 NPH.vis 
+		value: 72.8 
+		value: 72.8 
+	 MAB.vis 
+		value: 68.1 
+		value: 68.1 
+	 ZYB.vis 
+		value: 141.8 
+		value: 141.8 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.519 
+		value: -0.519 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.951 
+		value: 1.951 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.856 
+		value: 1.856 
+	 cranial.base.elipse.neu 
+		value: 44507.194 
+		value: 44507.194 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.001 
+		value: -0.001 
+	 mandibular_fossa_area.neu 
+		value: 142.032 
+		value: 142.032 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 2.015 
+		value: 2.015 
+
+ la_ferrassie_1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 159 
+		value: 159 
+	 Maxilloalveolar.lengt.vis 
+		value: 61.5 
+		value: 61.5 
+	 NPH.vis 
+		value: 79.7 
+		value: 79.7 
+	 MAB.vis 
+		value: 82.4 
+		value: 82.4 
+	 ZYB.vis 
+		value: 152.7 
+		value: 152.7 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.993 
+		value: 0.993 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.935 
+		value: 1.935 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.987 
+		value: 0.987 
+	 cranial.base.elipse.neu 
+		value: 55917.522 
+		value: 55917.522 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.004 
+		value: -0.004 
+	 mandibular_fossa_area.neu 
+		value: 170.086 
+		value: 170.086 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.958 
+		value: 1.958 
+
+ shanidar_1 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 152.8 
+		value: 152.8 
+	 Maxilloalveolar.lengt.vis 
+		value: 62.1 
+		value: 62.1 
+	 NPH.vis 
+		value: 82.2 
+		value: 82.2 
+	 MAB.vis 
+		value: 69.4 
+		value: 69.4 
+	 ZYB.vis 
+		value: 137.9 
+		value: 137.9 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.08 
+		value: 1.08 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.097 
+		value: 2.097 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.384 
+		value: 1.384 
+	 cranial.base.elipse.neu 
+		value: 47689.753 
+		value: 47689.753 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.002 
+		value: 0.002 
+	 mandibular_fossa_area.neu 
+		value: 135.466 
+		value: 135.466 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.581 
+		value: 0.581 
+
+ shanidar_5 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 158.5 
+		value: 158.5 
+	 Maxilloalveolar.lengt.vis 
+		value: 60.3 
+		value: 60.3 
+	 NPH.vis 
+		value: 83.7 
+		value: 83.7 
+	 MAB.vis 
+		value: 79.7 
+		value: 79.7 
+	 ZYB.vis 
+		value: 154.5 
+		value: 154.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.494 
+		value: 1.494 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.138 
+		value: 0.138 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.003 
+		value: 0.003 
+	 mandibular_fossa_area.neu 
+		value: 123.66 
+		value: 123.66 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ cesaire 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 153.1 
+		value: 153.1 
+	 Maxilloalveolar.lengt.vis 
+		value: 57 
+		value: 57 
+	 NPH.vis 
+		value: 83.3 
+		value: 83.3 
+	 MAB.vis 
+		value: 74.2 
+		value: 74.2 
+	 ZYB.vis 
+		value: 140.5 
+		value: 140.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ saccopastore_i 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 142.6 
+		value: 142.6 
+	 Maxilloalveolar.lengt.vis 
+		value: 59.5 
+		value: 59.5 
+	 NPH.vis 
+		value: 79.3 
+		value: 79.3 
+	 MAB.vis 
+		value: 67.9 
+		value: 67.9 
+	 ZYB.vis 
+		value: 131 
+		value: 131 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.163 
+		value: -0.163 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.689 
+		value: 1.689 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.798 
+		value: 0.798 
+	 cranial.base.elipse.neu 
+		value: 40129.197 
+		value: 40129.197 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ saccopastore_ii 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		N/A
+		N/A
+	 Maxilloalveolar.lengt.vis 
+		value: 62.4 
+		value: 62.4 
+	 NPH.vis 
+		value: 88.2 
+		value: 88.2 
+	 MAB.vis 
+		value: 74 
+		value: 74 
+	 ZYB.vis 
+		value: 153.6 
+		value: 153.6 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		value: 152.407 
+		value: 152.407 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.353 
+		value: 1.353 
+
+ Neanderthal_type 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 144.8 
+		value: 144.8 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.255 
+		value: 2.255 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.363 
+		value: 2.363 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.004 
+		value: -0.004 
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ saldanha 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 144.5 
+		value: 144.5 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.501 
+		value: 1.501 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 0.879 
+		value: 0.879 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ dali 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 155.1 
+		value: 155.1 
+	 Maxilloalveolar.lengt.vis 
+		value: 69.1 
+		value: 69.1 
+	 NPH.vis 
+		value: 64.1 
+		value: 64.1 
+	 MAB.vis 
+		value: 73.9 
+		value: 73.9 
+	 ZYB.vis 
+		value: 143.8 
+		value: 143.8 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 1.074 
+		value: 1.074 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.666 
+		value: 1.666 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.039 
+		value: 1.039 
+	 cranial.base.elipse.neu 
+		value: 49560.383 
+		value: 49560.383 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.005 
+		value: -0.005 
+	 mandibular_fossa_area.neu 
+		value: 193.823 
+		value: 193.823 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.179 
+		value: 0.179 
+
+ hualongdong 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 138 
+		value: 138 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		value: 80.6 
+		value: 80.6 
+	 MAB.vis 
+		value: 74 
+		value: 74 
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ Homo_longi 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 157.4 
+		value: 157.4 
+	 Maxilloalveolar.lengt.vis 
+		value: 74 
+		value: 74 
+	 NPH.vis 
+		value: 76.4 
+		value: 76.4 
+	 MAB.vis 
+		value: 79.2 
+		value: 79.2 
+	 ZYB.vis 
+		value: 162.4 
+		value: 162.4 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.09 
+		value: 0.09 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.134 
+		value: 1.134 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.01 
+		value: 1.01 
+	 cranial.base.elipse.neu 
+		value: 58729.718 
+		value: 58729.718 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.001 
+		value: -0.001 
+	 mandibular_fossa_area.neu 
+		value: 215.678 
+		value: 215.678 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.538 
+		value: -0.538 
+
+ jinniushan 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 143.8 
+		value: 143.8 
+	 Maxilloalveolar.lengt.vis 
+		value: 65.1 
+		value: 65.1 
+	 NPH.vis 
+		value: 72.5 
+		value: 72.5 
+	 MAB.vis 
+		value: 65.5 
+		value: 65.5 
+	 ZYB.vis 
+		value: 148.5 
+		value: 148.5 
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: 0.576 
+		value: 0.576 
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.777 
+		value: 1.777 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.027 
+		value: 1.027 
+	 cranial.base.elipse.neu 
+		value: 42812.619 
+		value: 42812.619 
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		value: -0.006 
+		value: -0.006 
+	 mandibular_fossa_area.neu 
+		value: 108.806 
+		value: 108.806 
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		value: -0.745 
+		value: -0.745 
+
+ maba 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 146 
+		value: 146 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.531 
+		value: 1.531 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 1.636 
+		value: 1.636 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+
+ xuchang 
+	 Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu 
+		value: 170.7 
+		value: 170.7 
+	 Maxilloalveolar.lengt.vis 
+		N/A
+		N/A
+	 NPH.vis 
+		N/A
+		N/A
+	 MAB.vis 
+		N/A
+		N/A
+	 ZYB.vis 
+		N/A
+		N/A
+	 PRA.NAA.Prin1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 SkFltnsCS.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.001 
+		value: 2.001 
+	 FhTYDiff.neu.nm 
+[1] "Measurement does not require normalization"
+		value: 2.333 
+		value: 2.333 
+	 cranial.base.elipse.neu 
+		N/A
+		N/A
+	 glab.prot.neu.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A
+	 mandibular_fossa_area.neu 
+		N/A
+		N/A
+	 malar_flatenning_PC1.vis.nm 
+[1] "Measurement does not require normalization"
+		N/A
+		N/A

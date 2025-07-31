@@ -13,9 +13,9 @@ if(NAAPRA){
 # Add Forehead height and Calvarial sagital flatness----------------------------
 
 if(FH_height_Oxy){
-  Gadi = read.csv('./data/foreahead_height_and_oxycephaly.csv',header = TRUE,skip = 3)
+  lateral = read.csv('./data/foreahead_height_and_oxycephaly.csv',header = TRUE,skip = 3)
   
-  Gadi = Gadi[order(Gadi$group),]%>%
+  lateral = lateral[order(lateral$group),]%>%
     dplyr::select(!c(SkFltnsCS,FhTYDiff))%>% #These cols interfere with the followup code, so I remove them here
     dplyr::rename(specimen = name_in_code)%>%
     dplyr::rename(glab.prot = NewK)%>%
@@ -25,7 +25,7 @@ if(FH_height_Oxy){
   
   
   # Add to the matrix  
-  full_craniometric_data = left_join(full_craniometric_data, Gadi, by = 'specimen')
+  full_craniometric_data = left_join(full_craniometric_data, lateral, by = 'specimen')
   full_craniometric_data[1,c('SkFltnsCS','FhTYDiff','glab.prot')] = as.integer(1)
   full_craniometric_data[2,c('SkFltnsCS','FhTYDiff','glab.prot')] = as.integer(0)
   
@@ -47,7 +47,7 @@ if(malar_flatenning){
     filter(!Gadi_name %in% c('M683591_Cro-Magnon II ventral','M684240_Qafzeh IX EM2027 ventral'))%>% # remove specimens where both sides are problematic
     select(specimen,trimmedR,trimmedL)
   
-  # fix speciemns where one side was not acuiqred correctly 
+  # fix specimens where one side was not acquired correctly 
   malar[malar['specimen']=='broken_hill','trimmedR'] = malar[malar['specimen']=='broken_hill','trimmedL'] # R->L
   malar[malar['specimen']=='petralona_1','trimmedR'] = malar[malar['specimen']=='petralona_1','trimmedL'] # R->L
   malar[malar['specimen']=='turkana','trimmedL'] = malar[malar['specimen']=='turkana','trimmedR'] # L->R
@@ -58,7 +58,7 @@ if(malar_flatenning){
   malar[malar['specimen']=='gibraltar1','trimmedL'] = malar[malar['specimen']=='gibraltar1','trimmedR'] # L->R
   malar[malar['specimen']=='steinheim_s11','trimmedL'] = malar[malar['specimen']=='steinheim_s11','trimmedR'] # L->R
   
-  # calculate PC1 using PCA algorithm
+  # calculate PC1 of both sides
   fdata = malar%>%
     select(trimmedR,trimmedL)
   
