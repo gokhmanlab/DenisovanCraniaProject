@@ -1,7 +1,1 @@
-This repository contains the functions used to analyze the match between the  predictions of the Denisovan morphology (Gokhman et al. 2019) and debated Middle Pleistocene specimens.
-
-
-Article:
-
-
-Refrences:
+Code used for the analysis in the research: Mishol N., Herzlinger G., Rak Y., Smilansky U., Carmel L., Gokhman D. (2025). Candidate Denisovan fossils identified through gene regulatory phenotyping.
