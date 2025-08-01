@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='720.00' height='576.00' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzEuOTV8NzE0LjUyfDUuNDh8NTQwLjgw'>
+    <rect x='31.95' y='5.48' width='682.57' height='535.32' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzEuOTV8NzE0LjUyfDUuNDh8NTQwLjgw)'>
+<polyline points='31.95,460.35 714.52,460.35 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='31.95,295.00 714.52,295.00 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='31.95,129.66 714.52,129.66 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='119.18,540.80 119.18,5.48 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='323.52,540.80 323.52,5.48 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='527.86,540.80 527.86,5.48 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='31.95,377.68 714.52,377.68 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='31.95,212.33 714.52,212.33 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='31.95,46.98 714.52,46.98 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='221.35,540.80 221.35,5.48 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='425.69,540.80 425.69,5.48 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='630.03,540.80 630.03,5.48 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='-650.62' y1='1083.27' x2='1397.09' y2='-573.72' style='stroke-width: 2.13; stroke: #BEBEBE; stroke-linecap: butt;' />
+<circle cx='447.79' cy='141.30' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='251.59' cy='326.50' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='179.12' cy='408.53' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='683.49' cy='63.93' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='240.40' cy='380.19' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='192.45' cy='422.80' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='215.14' cy='350.46' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='274.39' cy='341.70' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='221.52' cy='402.82' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='354.33' cy='249.91' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='232.58' cy='315.68' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='91.30' cy='393.35' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='236.13' cy='386.42' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='252.07' cy='513.60' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='272.01' cy='409.79' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='344.27' cy='194.09' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='308.11' cy='452.07' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='509.18' cy='195.61' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='564.24' cy='114.13' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='554.96' cy='184.77' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='475.34' cy='145.74' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='511.01' cy='29.81' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='504.50' cy='156.21' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='414.71' cy='186.25' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='342.57' cy='326.76' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='459.02' cy='232.19' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='226.29' cy='433.15' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='409.06' cy='83.97' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='434.90' cy='187.96' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='529.05' cy='116.70' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='62.98' cy='457.72' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='274.54' cy='343.25' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='491.07' cy='136.76' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='203.97' cy='403.50' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='449.02' cy='165.87' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='244.92' cy='328.15' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='340.26' cy='346.78' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='485.07' cy='109.89' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='506.30' cy='166.88' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='170.75' cy='267.30' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='190.14' cy='186.37' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<circle cx='88.27' cy='516.46' r='1.95' style='stroke-width: 0.71; stroke: #FBB040; fill: #FBB040;' />
+<circle cx='146.10' cy='370.12' r='1.95' style='stroke-width: 0.71; stroke: #228B22; fill: #228B22;' />
+<circle cx='461.61' cy='200.36' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='605.95' cy='248.09' r='1.95' style='stroke-width: 0.71; stroke: #3B94D1; fill: #3B94D1;' />
+<circle cx='530.31' cy='186.77' r='1.95' style='stroke-width: 0.71; stroke: #FF0000; fill: #FF0000;' />
+<text x='433.92' y='136.50' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='28.81px' lengthAdjust='spacingAndGlyphs'>Amud</text>
+<text x='287.62' y='325.64' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='60.71px' lengthAdjust='spacingAndGlyphs'>Arago 21-47</text>
+<text x='152.69' y='420.20' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='42.93px' lengthAdjust='spacingAndGlyphs'>Kabwe 1</text>
+<text x='672.51' y='59.15' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='73.57px' lengthAdjust='spacingAndGlyphs'>Cro-magnon III</text>
+<text x='254.09' y='375.45' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='18.99px' lengthAdjust='spacingAndGlyphs'>Dali</text>
+<text x='181.39' y='435.54' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='67.44px' lengthAdjust='spacingAndGlyphs'>Dmanisi 2282</text>
+<text x='203.37' y='363.19' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='67.44px' lengthAdjust='spacingAndGlyphs'>Dmanisi 2280</text>
+<text x='313.06' y='341.03' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='67.44px' lengthAdjust='spacingAndGlyphs'>Dmanisi 2700</text>
+<text x='217.74' y='416.20' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='67.44px' lengthAdjust='spacingAndGlyphs'>Dmanisi 4500</text>
+<text x='343.59' y='262.41' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='71.71px' lengthAdjust='spacingAndGlyphs'>KNM-ER-3733</text>
+<text x='214.04' y='310.99' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='71.71px' lengthAdjust='spacingAndGlyphs'>KNM-ER-3883</text>
+<text x='80.34' y='405.91' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='34.33px' lengthAdjust='spacingAndGlyphs'>Hexian</text>
+<text x='225.29' y='398.98' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='32.49px' lengthAdjust='spacingAndGlyphs'>Harbin</text>
+<text x='262.86' y='508.95' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='69.91px' lengthAdjust='spacingAndGlyphs'>Jebel Irhoud 1</text>
+<text x='284.99' y='422.30' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='52.73px' lengthAdjust='spacingAndGlyphs'>Jinniushan</text>
+<text x='317.57' y='206.69' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='117.13px' lengthAdjust='spacingAndGlyphs'>La Chapelle aux Saint 1</text>
+<text x='296.89' y='464.66' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='67.44px' lengthAdjust='spacingAndGlyphs'>La Ferrassie I</text>
+<text x='512.29' y='208.31' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='29.43px' lengthAdjust='spacingAndGlyphs'>LH 18</text>
+<text x='575.37' y='109.31' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='38.02px' lengthAdjust='spacingAndGlyphs'>Liujiang</text>
+<text x='565.83' y='180.08' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='41.69px' lengthAdjust='spacingAndGlyphs'>Mladec I</text>
+<text x='463.07' y='158.49' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='45.98px' lengthAdjust='spacingAndGlyphs'>Mladec V</text>
+<text x='500.06' y='42.42' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='49.05px' lengthAdjust='spacingAndGlyphs'>Mladec VI</text>
+<text x='516.74' y='151.61' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='46.60px' lengthAdjust='spacingAndGlyphs'>Feldhofer</text>
+<text x='396.44' y='197.73' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='26.37px' lengthAdjust='spacingAndGlyphs'>Ng12</text>
+<text x='353.63' y='321.99' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='41.70px' lengthAdjust='spacingAndGlyphs'>Solo VIII</text>
+<text x='481.94' y='228.11' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='36.17px' lengthAdjust='spacingAndGlyphs'>Oase-2</text>
+<text x='237.30' y='445.81' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='28.81px' lengthAdjust='spacingAndGlyphs'>OH24</text>
+<text x='419.98' y='79.31' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='33.11px' lengthAdjust='spacingAndGlyphs'>Omo II</text>
+<text x='467.58' y='193.01' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='55.79px' lengthAdjust='spacingAndGlyphs'>Peking_RC</text>
+<text x='548.78' y='129.30' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='73.58px' lengthAdjust='spacingAndGlyphs'>Peking man 10</text>
+<text x='73.93' y='453.03' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='73.58px' lengthAdjust='spacingAndGlyphs'>Peking man 12</text>
+<text x='281.66' y='356.10' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='56.42px' lengthAdjust='spacingAndGlyphs'>Petralona 1</text>
+<text x='480.29' y='132.00' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='49.06px' lengthAdjust='spacingAndGlyphs'>Qafzeh IX</text>
+<text x='178.44' y='398.84' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='46.61px' lengthAdjust='spacingAndGlyphs'>Saldanha</text>
+<text x='399.70' y='177.89' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='89.52px' lengthAdjust='spacingAndGlyphs'>Sambungmacan 3</text>
+<text x='227.60' y='340.70' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='59.49px' lengthAdjust='spacingAndGlyphs'>Atapuerca 5</text>
+<text x='351.43' y='359.40' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='53.35px' lengthAdjust='spacingAndGlyphs'>Shanidar 1</text>
+<text x='474.08' y='105.09' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='38.02px' lengthAdjust='spacingAndGlyphs'>Skhul V</text>
+<text x='517.04' y='179.38' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='25.14px' lengthAdjust='spacingAndGlyphs'>Spy I</text>
+<text x='181.75' y='262.64' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='28.21px' lengthAdjust='spacingAndGlyphs'>Spy II</text>
+<text x='201.28' y='181.52' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='49.05px' lengthAdjust='spacingAndGlyphs'>Steinheim</text>
+<text x='99.20' y='511.72' text-anchor='middle' style='font-size: 11.04px;fill: #FBB040; font-family: "Arial";' textLength='30.05px' lengthAdjust='spacingAndGlyphs'>Tabun</text>
+<text x='134.99' y='382.88' text-anchor='middle' style='font-size: 11.04px;fill: #228B22; font-family: "Arial";' textLength='40.05px' lengthAdjust='spacingAndGlyphs'>Turkana</text>
+<text x='450.77' y='212.84' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='77.88px' lengthAdjust='spacingAndGlyphs'>Upper cave 101</text>
+<text x='616.86' y='243.44' text-anchor='middle' style='font-size: 11.04px;fill: #3B94D1; font-family: "Arial";' textLength='80.32px' lengthAdjust='spacingAndGlyphs'>Upper Cave 103</text>
+<text x='556.13' y='199.25' text-anchor='middle' style='font-size: 11.04px;fill: #FF0000; font-family: "Arial";' textLength='43.55px' lengthAdjust='spacingAndGlyphs'>Xuchang</text>
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<polyline points='31.95,540.80 31.95,5.48 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<text x='27.02' y='380.83' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='27.02' y='215.48' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='27.02' y='50.13' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>3</text>
+<polyline points='29.21,377.68 31.95,377.68 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='29.21,212.33 31.95,212.33 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='29.21,46.98 31.95,46.98 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='31.95,540.80 714.52,540.80 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<polyline points='221.35,543.54 221.35,540.80 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='425.69,543.54 425.69,540.80 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='630.03,543.54 630.03,540.80 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<text x='221.35' y='552.03' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='425.69' y='552.03' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='630.03' y='552.03' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>3</text>
+<text x='373.24' y='567.36' text-anchor='middle' style='font-size: 15.00px; font-family: "Arial";' textLength='314.27px' lengthAdjust='spacingAndGlyphs'>Forehead projected height in left view (unitless)</text>
+<text transform='translate(16.22,273.14) rotate(-90)' text-anchor='middle' style='font-size: 15.00px; font-family: "Arial";' textLength='323.43px' lengthAdjust='spacingAndGlyphs'>Forehead projected height in right view (unitless)</text>
+</g>
+</svg>
