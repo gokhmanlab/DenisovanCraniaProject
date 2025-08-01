@@ -45,7 +45,7 @@ if(malar_flatenning){
     filter(Gadi_name!='M676573_Harbin ventral')%>% #remove the original Harbin version #
     #filter(Gadi_name!='M676573_Harbin_2_Edited')%>% #remove the additional Harbin version #
     filter(!Gadi_name %in% c('M683591_Cro-Magnon II ventral','M684240_Qafzeh IX EM2027 ventral'))%>% # remove specimens where both sides are problematic
-    select(specimen,trimmedR,trimmedL)
+    dplyr::select(specimen,trimmedR,trimmedL)
   
   # fix specimens where one side was not acquired correctly 
   malar[malar['specimen']=='broken_hill','trimmedR'] = malar[malar['specimen']=='broken_hill','trimmedL'] # R->L
@@ -60,15 +60,15 @@ if(malar_flatenning){
   
   # calculate PC1 of both sides
   fdata = malar%>%
-    select(trimmedR,trimmedL)
+    dplyr::select(trimmedR,trimmedL)
   
   mdata = malar%>%
-    select(all_of('specimen'))
+    dplyr::select(all_of('specimen'))
   
   pca_result <- prcomp(fdata, center = TRUE, scale. = TRUE)
   PCA_data = cbind(mdata,pca_result$x)%>%
     rename(malar_flatenning_PC1 = PC1)%>%
-    select(specimen,malar_flatenning_PC1)
+    dplyr::select(specimen,malar_flatenning_PC1)
 
   # Add to the matrix  
   full_craniometric_data = left_join(full_craniometric_data, PCA_data, by = 'specimen')

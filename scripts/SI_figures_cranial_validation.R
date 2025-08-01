@@ -191,13 +191,13 @@ dunnTest(NewK ~ Glabella_concavity_Ni,method = 'bh',
          data = calvarium_sup)
 
 ################################################################################
-# Glabellar curvature by Ni et al. categories
+# Glenoid Fossa size
 ################################################################################
 
 full_craniometric_data <- read.csv(
-  './data/craniometric_data.csv',
-  colClasses = c('character', 'factor', rep('numeric', 324))
-)
+  './../processed_craniometric_data.csv')
+
+source('./scripts/functions.R')
 
 
 GF.mat = full_craniometric_data
@@ -211,8 +211,6 @@ GF.mat$group = factor(GF.mat$group, levels=c("MPH", "NE","ERC", "AMH","HOMO","AN
 GF.mat = filter(GF.mat,group%in%c("MPH", "NE","ERC", "AMH",NA))%>%
   slice(-c(1,2)) #Remove first two metadata rows
 
-group_colors <- c("AMH" = '#3B94D1', "NE" = '#FBB040', "ERC" = "forestgreen", "MPH" = "red")
-
 ggplot(GF.mat,
        aes(x = group,
            y = mandibular_fossa_area.neu,
@@ -221,7 +219,6 @@ ggplot(GF.mat,
   geom_point()+
   geom_text_repel(data = filter(GF.mat,group == 'MPH'),aes(label = specimen),hjust = "left",nudge_x = 0.05,
                   direction = 'y',min.segment.length = 0)+
-  #geom_text(aes(label = specimen),hjust = "left",nudge_x = 0.05)+
   scale_color_manual(values = group_colors)+
   theme(panel.background = element_blank(),
         axis.text = element_text(size = 12),
@@ -232,12 +229,7 @@ ggplot(GF.mat,
   scale_x_discrete(labels = c("Neanderthals", "H. erectus",  "AMHs",'Middle Pleistocene Homo')) +
   labs(x = "Group", y = expression("Glenoid fossa area (cm"^2*")"))
 
-ggsave(filename = 'glenoid fossa size by group supplementary.svg',device = 'svg',
-       path = 'final graphs after revision',
-       width = 10,height = 8)
-
-ggsave(filename = 'glenoid fossa size by group supplementary.png',device = 'png',
-       path = 'final graphs after revision',
+ggsave(filename = './results/supplementary_analyses/glenoid fossa size by group supplementary.svg',device = 'svg',
        width = 10,height = 8)
 
 
