@@ -191,6 +191,59 @@ dunnTest(NewK ~ Glabella_concavity_Ni,method = 'bh',
          data = calvarium_sup)
 
 ################################################################################
+# Glabellar curvature by Ni et al. categories
+################################################################################
+
+full_craniometric_data <- read.csv(
+  './data/craniometric_data.csv',
+  colClasses = c('character', 'factor', rep('numeric', 324))
+)
+
+
+GF.mat = full_craniometric_data
+GF.mat$specimen = fix.names(GF.mat$specimen)
+GF.mat$group = as.character(GF.mat$group)
+GF.mat[GF.mat$group %in% c('EHS','UPS'),'group'] = 'AMH'
+GF.mat[GF.mat$group %in% c('ERC_EP','ERC_MP'),'group'] = 'ERC'
+GF.mat[GF.mat$group %in% c('LMPEA','MPH'),'group'] = 'MPH'
+GF.mat$group = as.factor(GF.mat$group)
+GF.mat$group = factor(GF.mat$group, levels=c("MPH", "NE","ERC", "AMH","HOMO","ANT"))
+GF.mat = filter(GF.mat,group%in%c("MPH", "NE","ERC", "AMH",NA))%>%
+  slice(-c(1,2)) #Remove first two metadata rows
+
+group_colors <- c("AMH" = '#3B94D1', "NE" = '#FBB040', "ERC" = "forestgreen", "MPH" = "red")
+
+ggplot(GF.mat,
+       aes(x = group,
+           y = mandibular_fossa_area.neu,
+           color = group))+
+  geom_boxplot(data = filter(GF.mat,!group == 'MPH'))+
+  geom_point()+
+  geom_text_repel(data = filter(GF.mat,group == 'MPH'),aes(label = specimen),hjust = "left",nudge_x = 0.05,
+                  direction = 'y',min.segment.length = 0)+
+  #geom_text(aes(label = specimen),hjust = "left",nudge_x = 0.05)+
+  scale_color_manual(values = group_colors)+
+  theme(panel.background = element_blank(),
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 15))+  # Remove background
+  scale_y_continuous(breaks = c(round(min(GF.mat$mandibular_fossa_area.neu),digits = 4), round(max(GF.mat$mandibular_fossa_area.neu),4)), 
+                     labels = c(round(min(GF.mat$mandibular_fossa_area.neu),digits = 4), round(max(GF.mat$mandibular_fossa_area.neu),4))) +
+  guides(color = FALSE)+
+  scale_x_discrete(labels = c("Neanderthals", "H. erectus",  "AMHs",'Middle Pleistocene Homo')) +
+  labs(x = "Group", y = expression("Glenoid fossa area (cm"^2*")"))
+
+ggsave(filename = 'glenoid fossa size by group supplementary.svg',device = 'svg',
+       path = 'final graphs after revision',
+       width = 10,height = 8)
+
+ggsave(filename = 'glenoid fossa size by group supplementary.png',device = 'png',
+       path = 'final graphs after revision',
+       width = 10,height = 8)
+
+
+
+
+
 
 
 
