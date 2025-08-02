@@ -380,7 +380,7 @@ colnames(pvals) <- c(
 
 count <- 0
 
-# Iterate over all relevant fossil specimens
+# Iterate over all relevant specimens
 
 for (specimen in relevant.specimens) {
   
@@ -1344,64 +1344,3 @@ ggsave(p, filename = paste('results/confetti_plot/Den_vs_Nea_plot.svg',sep = '')
 
 
 ```
-
-
-
-
-# Neanderthals vs Denisovan score analysis DEPRACTED
-
-```{r}
-combined_neanderthal <- merge(pvals, select(neanderthals,c(specimen,comb_score)), by = "specimen", all = TRUE)
-combined_neanderthal <- merge(pvals, select(neanderthals,c(specimen,wilcox.score)), by = "specimen", all = TRUE)
-
-
-combined_neanderthal$group = as.vector(combined_neanderthal$group)
-combined_neanderthal[combined_neanderthal$group %in% c('EHS','UPS'),'group'] = 'AMH'
-combined_neanderthal[combined_neanderthal$group %in% c('ERC_EP','ERC_MP'),'group'] = 'ERC'
-combined_neanderthal[combined_neanderthal$group %in% c('MPH'),'group'] = 'MPH'
-combined_neanderthal$group = as.factor(combined_neanderthal$group)
-combined_neanderthal$group = factor(combined_neanderthal$group, levels=c("MPH", "NE","ERC","AMH"))
-combined_neanderthal$specimen = fix.names(combined_neanderthal$specimen)
-combined_neanderthal = combined_neanderthal %>%
-  filter(total_predictions>4)
-
-
-
-
-ggplot(data = combined_neanderthal,aes(x = wilcox.score.x, y = wilcox.score.y,color = group))+
-  geom_point(data = filter(combined_neanderthal,group != 'MPH'),aes(color = group),size = 5,alpha = 0.5,shape = 16)+
-  geom_point(data = filter(combined_neanderthal,group == 'MPH'),aes(color = group),size = 8,alpha = 0.4,shape = 16)+
-  geom_text_repel(data = filter(combined_neanderthal,group %in% c('MPH')),
-                  nudge_y = 0.25, size = 14*5/14,
-                  aes(label = specimen), max.overlaps = Inf, color = 'red')+
-  scale_color_manual(values = c('MPH' = 'red', 'NE' = '#FBB040', 'AMH' = '#3B94D1',
-                                'ERC' = 'palegreen3'),
-                     
-                     labels = c('MPH' = 'Test subjects', 'NE' = 'Neanderthals',
-                                'AMH' = 'Anatomically modern humans', 'ERC' = 'H. erectus'))+
-  geom_abline(slope = 1, intercept = 0, color = "red", linetype = "dashed") +
-  theme_void()+
-  
-  labs(y = 'U-test Score', x = 'Binomial Score')+
-  theme(panel.background = element_blank())+
-    theme(
-    panel.background = element_blank(),
-    axis.title = element_text(size = 18),  # Adjust the size of axis titles
-    axis.title.y = element_text(angle = 90),
-    #axis.ticks = element_line(linewidth = 1,),  # Adjust the size of axis ticks
-    legend.position = c(0.75,0.25),
-    legend.frame = element_rect(colour = "black", fill=NA, size=0.5),
-    #panel.border = element_rect(colour = "black", fill=NA, size=1),
-    legend.title = element_text(size = 18),
-    legend.text = element_text(size = 14),
-    axis.text = element_text(size = 14),
-    panel.border = element_blank(),   # Removes the inner panel border
-    plot.background = element_blank() # Removes the outer plot background
-  )
-
-
-```
-
-
-
-
