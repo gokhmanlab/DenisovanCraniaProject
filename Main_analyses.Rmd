@@ -51,7 +51,7 @@ source('./scripts/functions.R')
 ```{r}
 # Load craniometric measurements
 full_craniometric_data <- read.csv(
-  './../craniometric_data.csv', #This data is processes raw data from Ni et al. 2021
+  './../data_after_initial_processing.csv', #This data is processes raw data from Ni et al. 2021
   colClasses = c('character', 'factor', rep('numeric', 324))
 )
 
@@ -359,7 +359,7 @@ if(cor.adj == TRUE){
 ```
 
 
-#calculate scores (after chatGPT)
+#calculate scores
 
 ```{r}
 # Load necessary functions
