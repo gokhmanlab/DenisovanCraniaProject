@@ -137,31 +137,34 @@ compare_specimen_percentiles <- function(data, specimen, predictions,
     
     binom.p.val <- wilcox.p.val <- NA
     
-    if (calc.pval == 'distance mean') {
-      z <- sum(directional_deviation) / sqrt((1 / 12) / n)
-      p.val <- 1 - pnorm(z)
-    } else if (calc.pval == 'U-test') {
-      wilcox.p.val <- round(wilcox.test(directional_deviation, alternative = 'g', mu = 0)$p.value, 7)
-    } else if (calc.pval == 'binomial') {
-      binom.p.val <- round(binom.test(sum(directional_deviation > 0), n,
-                                      p = 0.5, alternative = 'g')$p.value, 7)
-      wilcox.p.val <- round(wilcox.test(directional_deviation, alternative = 'g', mu = 0)$p.value, 7)
-    } else if (calc.pval == 'mid.range.binomial') {
-      x <- sum(directional_deviation > 0)
-      if (x == n) {
-        binom.p.val <- 0.5 * round(binom.test(x, n, p = 0.5, alternative = 'g')$p.value, 7)
-      } else {
-        p1 <- round(binom.test(x, n, p = 0.5, alternative = 'g')$p.value, 7)
-        p2 <- round(binom.test(x + 1, n, p = 0.5, alternative = 'g')$p.value, 7)
-        binom.p.val <- 0.5 * (p1 - p2) + p2
+    if (n>0){
+      if (calc.pval == 'distance mean') {
+        z <- sum(directional_deviation) / sqrt((1 / 12) / n)
+        p.val <- 1 - pnorm(z)
+      } else if (calc.pval == 'U-test') {
+        wilcox.p.val <- round(wilcox.test(directional_deviation, alternative = 'g', mu = 0)$p.value, 7)
+      } else if (calc.pval == 'binomial') {
+        binom.p.val <- round(binom.test(sum(directional_deviation > 0), n,
+                                        p = 0.5, alternative = 'g')$p.value, 7)
+        wilcox.p.val <- round(wilcox.test(directional_deviation, alternative = 'g', mu = 0)$p.value, 7)
+      } else if (calc.pval == 'mid.range.binomial') {
+        x <- sum(directional_deviation > 0)
+        if (x == n) {
+          binom.p.val <- 0.5 * round(binom.test(x, n, p = 0.5, alternative = 'g')$p.value, 7)
+        } else {
+          p1 <- round(binom.test(x, n, p = 0.5, alternative = 'g')$p.value, 7)
+          p2 <- round(binom.test(x + 1, n, p = 0.5, alternative = 'g')$p.value, 7)
+          binom.p.val <- 0.5 * (p1 - p2) + p2
+        }
+        
+        wilcox.test <- wilcoxsign_test(
+          directional_deviation ~ rep(0, length(directional_deviation)),
+          distribution = "exact", alternative = 'g'
+        )
+        wilcox.p.val <- round(wilcox.test@distribution@pvalue(wilcox.test@statistic@teststatistic), 7)
       }
-      
-      wilcox.test <- wilcoxsign_test(
-        directional_deviation ~ rep(0, length(directional_deviation)),
-        distribution = "exact", alternative = 'g'
-      )
-      wilcox.p.val <- round(wilcox.test@distribution@pvalue(wilcox.test@statistic@teststatistic), 7)
     }
+
     
     pval <- data.frame(
       specimen = specimen,

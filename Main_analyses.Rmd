@@ -57,7 +57,7 @@ full_craniometric_data <- read.csv(
 
 # Load phenotypic predictions
 phenotype_predictions <- read.csv(
-  './data/phenotypic_predictions.csv',  # or use: predictions_within_archaic_only.csv
+  './data/phenotypic_predictions.csv',  # or use: predictions_within_archaic_only.csv phenotypic_predictions.csv
   colClasses = c(
     rep('character', 3),
     'factor',
@@ -96,6 +96,11 @@ source('./scripts/combineDatasets.R')
 # The second row specifies whether each measurement is metric or non-metric
 
 ```{r}
+##Add crown area -- only for the arhcaic specific anlaysis!!!
+#full_craniometric_data =  full_craniometric_data%>%
+#  mutate(second.molar.crown.area = Dental..Upper.M2..Mesiodistal.length*Dental..Upper.M2..Buccolingual.width)
+#full_craniometric_data[c(1,2),'second.molar.crown.area'] = c(2,1)
+
 
 # Add suffix '.neu' to neurocranial measurements (row 1 == 1)
 neuro_cols <- names(full_craniometric_data)[as.vector(full_craniometric_data[1, ] == 1)]
@@ -257,6 +262,11 @@ MP_and_NE = mat%>%
   filter(!is.na(specimen))%>%
   pull(specimen)
 
+core_MP_and_NE = mat%>%
+  filter(group %in% c('NE') | specimen %in% c('Homo_longi','dali','broken_hill'))%>%
+  filter(!is.na(specimen))%>%
+  pull(specimen)
+
 all_measurements = mat%>%
   dplyr::select(contains(c('.neu','.vis')))%>%
   colnames()
@@ -323,7 +333,7 @@ cor.adj = FALSE #must be true of permutate is TRUE
 adj.m = anti.EKB
 
 #12. Output dir
-output.dir = "results"
+output.dir = "results/figs"
 name = 'test'
 
 #13. Plot specimens for fig?
@@ -429,16 +439,17 @@ for (specimen in relevant.specimens) {
     for (mName in names(mList)) {
       m <- mList[[mName]]
       fig.name <- pred[pred$long.name == mName, 'short.name']
-      img.path <- paste0('illustrator/Test Subjects SVGs/1x/', specimen, '.png')
+      #img.path <- paste0('illustrator/Test Subjects SVGs/1x/', specimen, '.png')
 
       m$group <- as.character(m$group)
       m[m$group %in% c('EHS', 'UPS'), 'group'] <- 'AMH'
       m[m$specimen == specimen, 'group'] <- specimen
       m <- filter(m, group %in% c(specimen, 'AMH', 'NE'))
       m[m$group == 'NE', 'group'] <- 'N'
-
+      
+    
       if (mName %in% c('PRA.NAA.Prin1.vis.nm', 'glab.prot.neu.nm')) {
-        m$value <- -m$value  # Flip sign to match correlation direction
+        m$value <- -m$value  # Flip sign to match correlation direction for visualization
       }
 
       p <- ggplot(m, aes(x = group, y = value)) +
@@ -446,7 +457,8 @@ for (specimen in relevant.specimens) {
                      aes(fill = group),
                      outlier.color = NA, color = 'black', coef = 1.5) +
         scale_fill_manual(values = c('#3B94D1', '#FBB040')) +
-        geom_image(data = subset(m, group == specimen), image = img.path, size = 0.7) +
+        geom_point(data = subset(m, group == specimen),color = 'red') +
+        #geom_image(data = subset(m, group == specimen), image = img.path, size = 0.7) +
         xlab(fig.name) +
         coord_flip() +
         theme(panel.background = element_blank(),
@@ -460,7 +472,7 @@ for (specimen in relevant.specimens) {
     }
 
     t <- ggarrange(plotlist = pList, ncol = 1, nrow = length(mList))
-    ggsave(filename = paste0(specimen, '_Fig1.svg'),
+    ggsave(filename = paste0(specimen, '_trait_distributions.svg'),
            width = 3, height = 10, path = output.dir, bg = 'white')
   }
 
@@ -478,12 +490,12 @@ for (specimen in relevant.specimens) {
           str_replace_all("_", " "),
         text.pos = if_else(d < 0, 0, d)
       ) %>%
-      arrange(related.prediction, d)
+      arrange(d,related.prediction)
 
     percentiles$pred_vs <- factor(percentiles$pred_vs, levels = percentiles$pred_vs)
 
     ggplot(percentiles, aes(x = d, y = pred_vs, fill = Vs)) +
-      geom_bar(stat = 'identity', width = 0.75, color = 'black', size = 0.5) +
+      geom_bar(stat = 'identity', width = 0.75, color = 'black', linewidth = 0.5) +
       geom_vline(xintercept = 0, color = "black", size = 1) +
       geom_text(aes(x = text.pos + 0.02, label = related.prediction.clean),
                 hjust = "left") +
@@ -502,10 +514,10 @@ for (specimen in relevant.specimens) {
         labels = c('NE' = 'Neanderthals', 'AMH' = 'AMHs')
       )
 
-    ggsave(filename = paste(specimen,'_percentile.svg',sep =''),
-      width = 10,height = 6, path = 'final graphs after revision/percentile_plots', bg = 'white')     
-    ggsave(filename = paste(specimen,'_percentile.png',sep =''),
-      width = 10,height = 6, path = 'final graphs after revision/percentile_plots', bg = 'white')  
+    ggsave(filename = paste(specimen,'_specimen_percentiles.svg',sep =''),
+      width = 10,height = 6, path = output.dir, bg = 'white')     
+    #ggsave(filename = paste(specimen,'_percentile.png',sep =''),
+    #  width = 10,height = 6, path = output.dir, bg = 'white')  
     }
 
   # Store or compute permutation results
@@ -553,210 +565,6 @@ for (specimen in relevant.specimens) {
 
 ```
 
-
-
-
-
-
-```{r}
-source('./scripts/functions.R')
-
-pvals <- as.data.frame(matrix(nrow = 0, ncol = 27))
-colnames(pvals) <- c(
-  'specimen', 'group', 'binom.p.val', 'binom.score', 'wilcox.p.val',
-  'wilcox.score', 'comb_score', 'mean.d', 'sum.abs.d',
-  'total_predictions', 'match_d_over_0.5', 'match_rate',
-  'perm_success_binom', 'perm_success_matched_d', 'perm_success_U',
-  'perm_success_mean_d', 'perm_success_dist', 'permutations',
-  'normalize', 'norm_method', 'EKB',
-  'cranial_capacity',
-  'greater_than_AMH', 'less_than_AMH',
-  'greater_than_NE', 'less_than_NE','available.measurements'
-)
-
-count = 0
-for (specimen in relevant.specimens) {
-
-  if (normalize == TRUE &&
-      norm_method == 'Cranial.capacit' &&
-      is.na(mat[mat$specimen == specimen, 'Cranial.capacit'])) next
-
-  sink(paste0('results/', name, Sys.Date(), ".txt"), append = TRUE)
-
-  output <- compare_specimen_percentiles(
-    data = mat,
-    specimen = specimen,
-    predictions = pred,
-    maxNApercent = maxNApercent,
-    normalize = normalize,
-    calc.pval = calc.pval,
-    norm_method = norm_method,
-    remove.outliers = remove.outliers,
-    percentile.dist = percentile.dist,
-    cor.adj = cor.adj,
-    adj.m = adj.m
-  )
-
-  pval <- output[[1]]
-  s <- specimen
-  spec <- filter(mat, specimen == s)
-  specimen.measurements <- measurements[measurements %in% colnames(spec)[!is.na(spec)]]
-  pval$available.measurements <- length(specimen.measurements)
-
-  #####Plot each specimen individually
-  if(plot.specimens == TRUE){
-    
-    mList = output[[2]]
-    mList = mList[c('NPH.vis','FhTYDiff.neu.nm','ZYB.vis','SkFltnsCS.neu.nm',
-                      'PRA.NAA.Prin1.vis.nm','glab.prot.neu.nm',
-                      'Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu',
-                      'MAB.vis','Maxilloalveolar.lengt.vis','cranial.base.elipse.neu',
-                    'malar_flatenning_PC1.vis.nm','mandibular_fossa_area.neu')]%>%
-      compact() #remove NULL elements from list
-    pList = list()
-    
-    for(mName in names(mList)){
-      m = mList[[mName]]
-      fig.name = pred[pred$long.name == mName,'short.name']
-      img = paste('illustrator/Test Subjects SVGs/1x/',specimen,'.png', sep = '')
-      m$group = as.character(m$group)
-      
-      m[m$group %in% c('EHS','UPS'),'group'] = 'AMH'
-      
-      m[m$specimen == specimen,'group'] = specimen
-      
-      m = m %>%
-        filter(group %in% c(specimen,'AMH','NE'))
-      
-      m[m$group %in% c('NE'),'group'] = 'N'
-      
-      if(mName %in% c('PRA.NAA.Prin1.vis.nm','glab.prot.neu.nm')){
-        m$value = -m$value  #to account for the correlation correction
-      }
-
-      p = ggplot(data = m,aes(x = group,y=value,))+
-        geom_boxplot(data = subset(m, group %in% c('AMH','N')),
-                     aes(fill=group),outlier.color = NA,
-                     position=position_dodge(0), colour = 'black',
-                     coef = 1.5)+ # To remove the boxplot whiskers
-        scale_fill_manual(values = c('#3B94D1', '#FBB040'))+ #To select the right colors for the boxplots
-        #geom_jitter(data = subset(m, group == specimen),aes(y=value),width = 0,size = 5)+
-        geom_image(data = subset(m, group == specimen), image = img, size = 0.7)+
-        xlab(fig.name)+
-        coord_flip()+
-        theme(panel.background = element_blank(),
-              axis.title.x=element_blank(),
-              axis.ticks = element_blank(),
-              axis.text = element_blank(),
-              axis.text.y = element_blank(), #element_text(angle = 90),
-              legend.position='none')+
-        scale_x_discrete()
-      
-      pList[[mName]] = p
-    }
-    t = ggarrange(plotlist  = pList,ncol = 1,nrow =length(mList))
-    ggsave(filename = paste(specimen,'_Fig1.svg',sep =''),
-           width = 3,height = 10, path = output.dir, bg = 'white')
-    
-  }
-
-  if(plot.percentiles == TRUE){
-    percentiles = output[[3]]
-    percentiles$d = percentiles$d*2 #to change the tange into -1<x<1
-    percentiles$Vs = factor(percentiles$Vs,levels=c("NE","AMH"))
-    
-    percentiles$pred_vs = paste(percentiles$related.prediction,percentiles$Vs,sep = "_")
-      percentiles <- percentiles %>%
-      arrange(related.prediction)%>%
-      arrange(d)
-
-    percentiles$pred_vs <- factor(percentiles$pred_vs, levels = percentiles$pred_vs)
-
-    percentiles$related.prediction.clean <- percentiles$related.prediction %>%
-      str_to_lower() %>% 
-      str_replace_all("_", " ")
-    
-    percentiles <- percentiles %>%
-      mutate(text.pos = if_else(d < 0, 0, d))
-    
-    ggplot(data = percentiles, aes(x = d, y = pred_vs, fill = Vs)) +
-      geom_bar(stat = 'identity', width = 0.75,color = 'black', size = 0.5) +
-      geom_vline(xintercept = 0, color = "black", size = 1) +
-      geom_text(aes(x = text.pos+0.02), label = percentiles$related.prediction.clean,hjust = "left")+
-      theme_minimal() +
-      theme(axis.text.y = element_blank(), 
-            axis.text.x = element_text(size = 12),
-            panel.grid.major = element_blank(),  # Remove major gridlines
-            panel.grid.minor = element_blank())+
-      xlab('Normalized Phenotypic Distance')+
-      ylab('')+
-      labs(fill = 'Compared with')+
-      
-      scale_x_continuous(breaks= seq(-1,1,1),limits = c(-1.5, 1.5),position = "top")+
-      theme(axis.line.x = element_line(arrow = grid::arrow(length = unit(0.3, "cm")), size = 1))+
-      
-      
-      scale_fill_manual(values=c('#FBB040','#3B94D1'),
-                        labels = c('NE' = 'Neanderthals',
-                               'AMH' = 'AMHs'))
-      
-    #ggsave(filename = paste(specimen,'_percentile.svg',sep =''),
-    #  width = 10,height = 6, path = 'final graphs after revision/percentile_plots', bg = 'white')     
-    #ggsave(filename = paste(specimen,'_percentile.png',sep =''),
-    #  width = 10,height = 6, path = 'final graphs after revision/percentile_plots', bg = 'white')  
-
-
-  }
-  
-  if (permutate == FALSE) {
-    pvals[nrow(pvals) + 1, ] <- pval
-  }
-  
-if (permutate == TRUE) {
-  permutations <- run_permutations_for_specimen(
-    data = mat,
-    specimen = specimen,
-    predictions = pred,
-    measurements = measurements,
-    maxNApercent = maxNApercent,
-    normalize = normalize,
-    calc.pval = calc.pval,
-    norm_method = norm_method,
-    remove.outliers = remove.outliers,
-    percentile.dist = percentile.dist,
-    cor.adj = cor.adj,
-    adj.m = adj.m,
-    permutation.number = permutation.number
-  )
-
-  # Calculate permutation success metrics
-  per.binom <- as.numeric(permutations$binom.score)
-  pval$perm_success_binom <- sum(pval$binom.score > per.binom)
-
-  per.matched.d <- as.numeric(permutations$match_d_over_0.5)
-  pval$perm_success_matched_d <- sum(pval$match_d_over_0.5 > per.matched.d)
-
-  per.U <- as.numeric(permutations$wilcox.score)
-  pval$perm_success_U <- sum(pval$wilcox.score > per.U)
-
-  per.mean.d <- as.numeric(permutations$mean.d)
-  pval$perm_success_mean_d <- sum(pval$mean.d > per.mean.d)
-
-  per.comb_score <- as.numeric(permutations$comb_score)
-  pval$perm_success_dist <- sum(pval$comb_score > per.comb_score)
-
-  pval$permutations <- nrow(permutations)
-  pval$available.measurements <- length(specimen.measurements)
-  pvals[nrow(pvals) + 1, ] <- pval
-}
-
-  while (sink.number() > 0) sink()
-
-  count <- count + 1
-  cat(specimen, count, '/', length(relevant.specimens), '\n')
-}
-
-```
 
 Add adjusted p.values
 
@@ -818,9 +626,6 @@ maxMeasurementNA = 20
 #which PCs?
 xAxis = 1
 yAxis = 2
-
-#directory
-PCAdir = 'results/PCA/'
 
 #filter first measurements or specimens?
 filter_specimens_first = FALSE
@@ -943,19 +748,7 @@ for(i in 1:length(types)){
   
   #Create PCA 
   
-     autoplot(pc,x = xAxis, y = yAxis, data = filtered , fill = 'group',
-              colour = 'group',label = TRUE, shape = TRUE, frame = TRUE,loadings = FALSE)+
-     theme(panel.background = element_blank(),
-           legend.position='none')+
-     scale_color_manual(values = c('MPH' = 'red', 'NE' = '#FBB040', 'AMH' = '#3B94D1', 'ERC' = 'lawngreen'))+
-      scale_fill_manual(values = c('MPH' = 'red', 'NE' = '#FBB040', 'AMH' = '#3B94D1', 'ERC' = 'lawngreen'))+
-       ggtitle(paste(names(types)[i],'maxSpecNA',maxSpecNA,'maxMeasurementNA ',maxMeasurementNA))
-#  ggsave(filename = paste(PCAdir,name,'PCA.svg',sep =''),
-#         width = 10,height = 10, bg = 'white')
-#  write.csv(filtered,paste(PCAdir,name,'.csv',sep =''),row.names = FALSE)
-  
-  
-  temp = ggplot(test,aes(x = PC1,y = PC2,fill = Group,colour = Group))+
+  ggplot(test,aes(x = PC1,y = PC2,fill = Group,colour = Group))+
     geom_mark_hull(data = filter(test,!Group == 'MPH'),
                    concavity = 180,expand=0,radius=0,colour = NA )+
     geom_point(data = filter(test,Group!='MPH'),
@@ -993,8 +786,8 @@ for(i in 1:length(types)){
     #scale_x_reverse()+ #for the reverse graphs
     #scale_y_reverse() #for the reverse graphs
   
-#  ggsave(filename = paste(PCAdir,'V2',name,'PCA.svg',sep =''),device = 'svg',
-#         width = 10,height = 10, bg = 'white')  
+  ggsave(filename = paste(output.dir,'/',name,'PCA.svg',sep =''),device = 'svg',
+         width = 10,height = 10, bg = 'white')  
 #  ggsave(filename = paste(PCAdir,'V2',name,'PCA.png',sep =''),device = 'png',
 #         width = 10,height = 10, bg = 'white') 
   
@@ -1003,118 +796,13 @@ for(i in 1:length(types)){
 
 
 
-#Plot boxplots of results
-
-```{r}
-
-box.mat = pvals
-
-box.mat$group = as.vector(box.mat$group)
-box.mat[box.mat$group %in% c('EHS','UPS'),'group'] = 'AMH'
-box.mat[box.mat$group %in% c('ERC_EP','ERC_MP'),'group'] = 'ERC'
-box.mat[box.mat$group %in% c('MPH'),'group'] = 'MPH'
-box.mat$group = as.factor(box.mat$group)
-box.mat$group = factor(box.mat$group, levels=c("MPH", "NE","ERC","AMH"))
-box.mat$specimen = fix.names(box.mat$specimen)
-box.mat = box.mat %>%
-  filter(total_predictions>4)
-
-
-#Prepare values for graphs
-box.mat = box.mat%>%
-  mutate(minusLogPvalU = -log10(wilcox.p.val))%>%
-  mutate(minusLogPvalBin = -log10(binom.p.val))%>%
-  mutate(minusLogPermU = -log10(1-(perm_success_U/permutations)))%>%
-  mutate(minusLogPermBin = -log10(1-(perm_success_binom/permutations)))%>%
-  mutate(finalScore = sqrt(minusLogPvalU^2+minusLogPvalBin^2))
-
-  
-  
-
-for(var in c('minusLogPvalU','minusLogPvalBin','match_rate','finalScore' )){#,'minusLogPermU','minusLogPermBin')){
-  if(var == 'minusLogPvalU'){
-    name = 'U Test Fit Score'
-  }else if(var == 'minusLogPvalBin'){
-    name = 'Binomial Fit Score'
-  }else if(var == 'minusLogPermU'){
-    name = 'Permuted U Test Fit Score'
-  }else if(var == 'minusLogPermBin'){
-    name = 'Permuted Binomial Test Fit Score'
-  }else if(var == 'finalScore'){
-    name = 'Combined Score (S)'
-  }else if(var == 'match_rate'){
-    name = 'Match Rate'}
-
-  ggplot(data = box.mat,aes(y = !!sym(var)))+
-    geom_boxplot(data = filter(box.mat,group!='MPH'), colour = 'black',fatten = 3,lwd = 0.5,width = 0.25,
-                 aes(x = reorder(group,group),fill = group),outliers = FALSE)+
-    geom_jitter(data = filter(box.mat,group!='MPH'), colour = 'black',width = 0,alpha = 0.25,
-                aes(x = reorder(group,group),fill = group))+
-    geom_point(data = filter(box.mat,group=='MPH'), color = 'red',
-               aes(x = group))+
-    
-    geom_text_repel(data = filter(box.mat,group=='MPH'),max.overlaps = Inf,
-                    nudge_x = 0.25, nudge_y = 0,
-                    aes(label = specimen, x = group),direction = "y",seed = 2024,
-                    min.segment.length = 0)+    
-    theme(legend.position='none',
-          panel.background = element_blank(), 
-          panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank())+
-    labs(y = name, x = '')+
-    scale_x_discrete(limits = c('ERC','AMH','NE','MPH'),
-                     labels = c('ERC' = 'H.erectus' ,'AMH' = 'AMH',
-                                'NE' = 'Neanderthals','MPH' = 'Test Subjects'))+
-    #coord_flip()+
-    scale_fill_manual(values = c('MPH' = 'black', 'NE' = '#FBB040', 'AMH' = '#3B94D1', 'ERC' = 'palegreen3'))
-  
-  #ggsave(filename = paste('results/confetti_plot/',var,'.svg',sep = ''), width = 12,height = 7)
-  
-}
-box.mat = box.mat %>%
-  mutate(group = factor(box.mat$group,levels = c('MPH','ERC','AMH','NE')),.keep = 'unused')%>%
-  filter(group %in% c('MPH','NE'))
-
-p = ggplot(box.mat,aes(color = group,x = -log10(binom.p.val), y = -log10(wilcox.p.val)))+
-  geom_point(data = filter(box.mat,group != 'MPH'),aes(color = group),size = 5,alpha = 0.5,shape = 16)+
-  geom_point(data = filter(box.mat,group == 'MPH'),aes(color = group),size = 8,alpha = 0.4,shape = 16)+
-  geom_text_repel(data = filter(box.mat,group %in% c('MPH')),
-                  nudge_y = 0.25, size = 14*5/14,
-                  aes(label = specimen), max.overlaps = Inf, color = 'red')+
-  scale_color_manual(values = c('MPH' = 'red', 'NE' = '#FBB040', 'AMH' = '#3B94D1',
-                                'ERC' = 'palegreen3'),
-                     labels = c('MPH' = 'Test subjects', 'NE' = 'Neanderthals',
-                                'AMH' = 'Anatomically modern humans', 'ERC' = 'H. erectus'))+
-  theme_void()+
-  
-  labs(y = 'U-test Score', x = 'Binomial Score')+
-  theme(panel.background = element_blank())+
-    theme(
-    panel.background = element_blank(),
-    axis.title = element_text(size = 18),  # Adjust the size of axis titles
-    axis.title.y = element_text(angle = 90),
-    #axis.ticks = element_line(linewidth = 1,),  # Adjust the size of axis ticks
-    legend.position = c(0.75,0.25),
-    legend.frame = element_rect(colour = "black", fill=NA, size=0.5),
-    #panel.border = element_rect(colour = "black", fill=NA, size=1),
-    legend.title = element_text(size = 18),
-    legend.text = element_text(size = 14),
-    axis.text = element_text(size = 14),
-    panel.border = element_blank(),   # Removes the inner panel border
-    plot.background = element_blank() # Removes the outer plot background
-  )
-  
-  p = ggMarginal(p, type="boxplot",groupFill = TRUE, fatten = 3,lwd = 0.5,alpha = 0.5,)
-
-
-  #ggsave(p, filename = paste('results/confetti_plot/pval_dotsAllNames.svg',sep = ''), width = 9,height = 9)
-
-```
-Confetti plot for archaic comparison
-
-
+Confetti plot for archaic compariso
 
 # Print Archaic specific results
+# for this please rerun the analysis with:
+## predictions taken from predictions_within_archaic_only.csv
+## uncomment lines 100-102
+## relevant.specimens set to core_MP_and_NE
 
 ```{r}
 archaic.pvals = pvals
@@ -1201,7 +889,7 @@ p = ggplot(box.mat,aes(color = group,x = -log10(binom.p.val), y = -log10(wilcox.
     axis.title.y = element_text(angle = 90),
     #axis.ticks = element_line(linewidth = 1,),  # Adjust the size of axis ticks
     legend.position = c(0.75,0.25),
-    legend.frame = element_rect(colour = "black", fill=NA, size=0.5),
+    legend.frame = element_rect(colour = "black", fill=NA, linewidth=0.5),
     #panel.border = element_rect(colour = "black", fill=NA, size=1),
     legend.title = element_text(size = 18),
     legend.text = element_text(size = 14),
@@ -1211,7 +899,7 @@ p = ggplot(box.mat,aes(color = group,x = -log10(binom.p.val), y = -log10(wilcox.
   )
 
   
-  #ggsave(p, filename = paste('final graphs after revision/archaic_comparison/confetti_archaic_comparison.svg',sep = ''), width = 9,height = 9)
+  ggsave(p, filename = paste(output.dir,'/','archaic_specific.svg',sep =''), width = 9,height = 9)
 
   
   # to get the percentile of a specimen compared to neanderthal distribution
@@ -1234,113 +922,4 @@ group.cdf = approxfun(compare.values,Quant,yleft = 0,yright = 1, ties = 'mean') 
 percentile = 100*group.cdf(test.value)
 print(percentile)
   
-  
-```
-
-
-
-```{r}
-
-ggplot(data = pvals,aes(x = group, y = wilcox.p.val))+
-  geom_violin()+
-  geom_label(aes(label = specimen))+
-  scale_y_continuous(trans = "log10")
-
-ggplot(data = pvals,aes(x = group, y = perm_success_U))+
-  geom_violin()+
-  geom_label_repel(aes(label = specimen))
-
-m = full_craniometric_data
-m$group <- factor(m$group, levels = c(levels(m$group), 'AMH'))
-
-m[m$group %in% c('EHS','UPS'),'group'] = 'AMH'
-
-slice(m,-c(1,2))%>%
-  filter(group %in% c('AMH','NE'))%>%
-  ggplot(aes(x = group,y = glab.prot.neu.nm))+
-  geom_boxplot()+
-  geom_label_repel(aes(label = specimen))
-  
-rm.outliers = function(data){
-outliers <- boxplot(data, plot = FALSE)$out
-data_no_outlier <- data[-which(data %in% outliers)] 
- return(data_no_outlier)
-}
-
-#t.test AMH vs NE
-
-AMH = filter(m,group=='AMH')%>%
-  select(glab.prot.neu.nm)
-
-NE = filter(m,group=='NE')%>%
-  select(glab.prot.neu.nm)
-
-UPS = filter(m,group=='UPS')%>%
-  select(glab.prot.neu.nm)
-
-
-t.test(AMH,NE,alternative = 'g')
-t.test(UPS,NE,alternative = 'g')
-
-
-full_craniometric_data$glab.prot
-
-ggplot(data = m,aes(x = group, y = glab.prot.neu.nm))+
-  geom_boxplot()+
-  geom_label_repel(aes(label = specimen))
-
-  
-```
-
-
-
-#Den Vs Ne predictions
-
-```{r}
-#First run the algorithm with only Denisovan-specific predictions, save as Denisovan_specific_score
-#Second, run again with only Neanderthal-specific predictions, save as Neanderthal_specific_score
-
-combined_nea_den <- merge(Denisovan_specific_score, select(Neanderthal_specific_score,c(specimen,wilcox.score)), by = "specimen", all = TRUE,suffixes = c(".denis",".nean"))
-
-combined_nea_den$group = as.vector(combined_nea_den$group)
-combined_nea_den[combined_nea_den$group %in% c('MPH'),'group'] = 'MPH'
-combined_nea_den$group = as.factor(combined_nea_den$group)
-combined_nea_den$group = factor(combined_nea_den$group, levels=c("MPH", "NE"))
-combined_nea_den$specimen = fix.names(combined_nea_den$specimen)
-
-combined_nea_den$den_min_nea = combined_nea_den$wilcox.score.denis-combined_nea_den$wilcox.score.nean
-
-p = ggplot(data = combined_nea_den,aes(x = wilcox.score.denis, y =wilcox.score.nean,color = group))+
-  geom_point(data = filter(combined_nea_den,group != 'MPH'),aes(color = group),size = 5,alpha = 0.5,shape = 16)+
-  geom_point(data = filter(combined_nea_den,group == 'MPH'),aes(color = group),size = 5,alpha = 0.5,shape = 16)+
-  geom_text_repel( size = 14*5/14,
-                  aes(label = specimen), max.overlaps = Inf)+
-  scale_color_manual(values = c('MPH' = 'red', 'NE' = '#FBB040', 'AMH' = '#3B94D1',
-                                'ERC' = 'palegreen3'),
-                     
-                     labels = c('MPH' = 'Test subjects', 'NE' = 'Neanderthals',
-                                'AMH' = 'Anatomically modern humans', 'ERC' = 'H. erectus'))+
-  geom_abline(slope = 0.5, intercept = 0, color = "lightgray",linewidth = 1) +
-  theme_void()+
-  
-  labs(y = 'Neanderthal-specific U-test score', x = 'Denisovan-specific U-test score')+
-  theme(panel.background = element_blank())+
-    theme(
-    panel.background = element_blank(),
-    axis.title = element_text(size = 18),  # Adjust the size of axis titles
-    axis.title.y = element_text(angle = 90),
-    #axis.ticks = element_line(linewidth = 1,),  # Adjust the size of axis ticks
-    legend.position = c(0.75,0.2),
-    legend.frame = element_rect(colour = "black", fill=NA, size=0.5),
-    #panel.border = element_rect(colour = "black", fill=NA, size=1),
-    legend.title = element_text(size = 18),
-    legend.text = element_text(size = 14),
-    axis.text = element_text(size = 14),
-    panel.border = element_blank(),   # Removes the inner panel border
-    plot.background = element_blank() # Removes the outer plot background
-  )
-
-ggsave(p, filename = paste('results/confetti_plot/Den_vs_Nea_plot.svg',sep = ''), width = 10,height = 7)
-
-
 ```

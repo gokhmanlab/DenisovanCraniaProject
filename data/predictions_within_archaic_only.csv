@@ -1,0 +1,19 @@
+short.name,name,long.name,type,loc,normalize,for.pensize,include.in.analysis,related.prediction,AMH,NE
+MXBPB,Maximum_biparietal_breadth,Maximum.biparietal.breadth..Rightmire.et.al...2006...Cranial.vault..BP.neu,distance,1,yes,no,yes,biparietal_width,undetected,greater
+MAL,Maxilloalveolar_length,Maxilloalveolar.lengt.vis,distance,2,yes,no,yes,dental_arch_length,undetected,greater
+NPH,Upper_facial_height,NPH.vis,distance,2,yes,yes,yes,facial_height,undetected,undetected
+PLB,Internal_palate_bredth,M63..Internal.palatal.breadt.vis,distance,2,yes,yes,no,palate_width,undetected,undetected
+MAB,Maxilloalveolar_breadth,MAB.vis,distance,2,yes,yes,yes,palate_width,undetected,undetected
+ZYB,Bizygomatic_breadth,ZYB.vis,distance,2,yes,yes,yes,facial_width,undetected,less
+id-gn,Symphysis_height,Symphysis height (id-gn).mandible,distance,3,yes,no,yes,anterior_mandibular_height,undetected,undetected
+id-lm,Infradentale_to_last_molar,Infradentale to the posterior edge of the last molar at the alveolar level.mandible,distance,3,yes,no,no,dental_arch_length,undetected,greater
+PRA.NAA.Prin1,PRA_NAA_angles,PRA.NAA.Prin1.vis.nm,angle,2,no,no,yes,facial_protrusion,undetected,greater
+TopFlatness,oxycephaly,SkFltnsCS.neu.nm,angle,1,no,no,yes,oxycephaly,undetected,undetected
+ForeheadHeight,foerehead_height,FhTYDiff.neu.nm,angle,1,no,no,yes,foerehead_height,undetected,undetected
+CBS,cranial_base_area,cranial.base.elipse.neu,distance,1,yes,no,yes,cranial_base_size,undetected,undetected
+GLB,Glabellar Protrusion,glab.prot.neu.nm,angle,1,no,no,yes,Protruding_glabella,undetected,undetected
+GFA,glenoid_fossa_area,mandibular_fossa_area.neu,distance,2,yes,no,yes,condylar_size,undetected,greater
+M2S,Second molar crown,second.molar.crown.area.vis,distance,2,tes,no,yes,second.molar.crown.area,undetected,greater
+MFA,malar_flatenning_angle,malar_flatenning_PC1.vis.nm,angle,2,yes,no,yes,malar_protrusion,undetected,less
+EKB,Biorbital_breadth,EKB.vis,distance,2,no,yes,normalize_value,,,
+IBM2,Internal_breadth_M2,Internal breadth at m2 along the alveolar margin.mandible,distance,3,no,no,normalize_value,,,
